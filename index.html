@@ -121,6 +121,7 @@
             cursor: pointer;
             margin-top: 20px;
             transition: 0.3s;
+             box-shadow: 0 0 20px var(--neon);
         }
         
         .btn:hover {
@@ -192,7 +193,7 @@
             box-shadow: 0 0 15px var(--neon);
         }
         
-        .box::after {
+         .box::after {
             content: '';
             position: absolute;
             width: 20px;
@@ -201,10 +202,13 @@
             background: var(--neon);
             top: 20px;
             border-radius: 50%;
+            /* 🔥 NEON GLOW */
+            box-shadow: 0 0 10px var(--neon), 0 0 20px var(--neon), 0 0 30px var(--neon);
         }
         
         .right::after {
-            left: -10px
+            left: -10px;
+            box-shadow: 0 0 10px var(--neon), 0 0 20px var(--neon), 0 0 30px var(--neon);
         }
         /* CARDS */
         
